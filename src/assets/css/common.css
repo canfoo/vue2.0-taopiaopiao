@@ -1,0 +1,566 @@
+/*格式化样式*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    width: 100%;
+    background: #fff;
+}
+header,
+footer,
+nav,
+section,
+figure,
+figcaption,
+aside,
+article {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol,
+ul {
+    list-style: none;
+}
+caption,
+th {
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before,
+q:after {
+    content: '';
+}
+abbr,
+acronym {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+/*文字排版、颜色*/
+.f12 {
+    font-size: 12px;
+}
+.f13 {
+    font-size: 13px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f20 {
+    font-size: 20px;
+}
+.fb {
+    font-weight: bold;
+}
+.fn {
+    font-weight: normal;
+}
+.t2 {
+    text-indent: 2em;
+}
+.red,
+a.red {
+    color: #cc0031;
+}
+.darkblue,
+a.darkblue {
+    color: #039;
+}
+.gray,
+a.gray {
+    color: #878787;
+}
+.lh150 {
+    line-height: 150%;
+}
+.lh180 {
+    line-height: 180%;
+}
+.lh200 {
+    line-height: 200%;
+}
+.unl {
+    text-decoration: underline;
+}
+.no_unl {
+    text-decoration: none;
+}
+/*定位*/
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+.tr {
+    text-align: right;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+.cb {
+    clear: both;
+}
+.cl {
+    clear: left;
+}
+.cr {
+    clear: right;
+}
+.vm {
+    vertical-align: middle;
+    display: inline-block;
+}
+.ib {
+    display: inline-block;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+.abs-right {
+    position: absolute;
+    right: 0;
+}
+.zoom {
+    zoom: 1;
+}
+.hidden {
+    visibility: hidden;
+}
+.none {
+    display: none;
+}
+.ib {
+    display: inline-block;
+}
+.tddd {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*长度高度*/
+.w10 {
+    width: 10px;
+}
+.w20 {
+    width: 20px;
+}
+.w50 {
+    width: 50px;
+}
+.w90 {
+    width: 90px;
+}
+.w100 {
+    width: 100px;
+}
+.w200 {
+    width: 200px;
+}
+.w250 {
+    width: 250px;
+}
+.w500 {
+    width: 500px;
+}
+.w800 {
+    width: 800px;
+}
+.w {
+    width: 100%;
+}
+.h50 {
+    height: 50px;
+}
+.h80 {
+    height: 80px;
+}
+.h100 {
+    height: 100px;
+}
+.h200 {
+    height: 200px;
+}
+.h {
+    height: 100%;
+}
+/*边距*/
+.m10 {
+    margin: 10px;
+}
+.m15 {
+    margin: 15px;
+}
+.m30 {
+    margin: 30px;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.mb100 {
+    margin-bottom: 100px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml15 {
+    margin-left: 15px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.ml30 {
+    margin-left: 30px;
+}
+.ml50 {
+    margin-left: 50px;
+}
+.ml100 {
+    margin-left: 100px;
+}
+.mr5 {
+    margin-right: 5px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mr15 {
+    margin-right: 15px;
+}
+.mr50 {
+    margin-right: 50px;
+}
+.mr100 {
+    margin-right: 100px;
+}
+.p10 {
+    padding: 10px;
+}
+.p15 {
+    padding: 15px;
+}
+.p30 {
+    padding: 30px;
+}
+.pt5 {
+    padding-top: 5px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.pt15 {
+    padding-top: 15px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.pt30 {
+    padding-top: 30px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+.pb5 {
+    padding-bottom: 5px;
+}
+.pb100 {
+    padding-bottom: 100px;
+}
+.pl5 {
+    padding-left: 5px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.pl50 {
+    padding-left: 50px;
+}
+.pl100 {
+    padding-left: 100px;
+}
+.pr5 {
+    padding-right: 5px;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.pr15 {
+    padding-right: 15px;
+}
+.pr100 {
+    padding-right: 100px;
+}
+/*遮罩*/
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    z-index: 999999;
+}
+/*1px;解决方案*/
+.border-radius {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-radius {
+        border: 0px;
+        border-radius: 0px;
+        position: relative;
+    }
+    .border-radius:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        border: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-top {
+    border-top: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-top {
+        border-top: 0px;
+        position: relative;
+    }
+    .border-top:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-top: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-bottom {
+    border-bottom: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-bottom {
+        border-bottom: 0px;
+        position: relative;
+    }
+    .border-bottom:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+.border-right {
+    border-right: 1px solid #d9d9d9;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-right {
+        border-right: 0px;
+        position: relative;
+    }
+    .border-right:before {
+        content: '';
+        pointer-events: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border-right: 1px solid #d9d9d9;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+/*mint 1px*/ 
+.mint-1px-t {
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-t {
+        background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+.mint-1px-b {
+    background-image: -webkit-linear-gradient(bottom, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(0deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-b {
+        background-image: -webkit-linear-gradient(bottom, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(0deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+.mint-1px-l {
+    background-image: -webkit-linear-gradient(left, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(90deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-l {
+        background-image: -webkit-linear-gradient(left, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(90deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
+.mint-1px-r {
+    background-image: -webkit-linear-gradient(right, #d9d9d9, #d9d9d9 100%);
+    background-image: linear-gradient(270deg, #d9d9d9, #d9d9d9 100%);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mint-1px-r {
+        background-image: -webkit-linear-gradient(right, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-image: linear-gradient(270deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
