@@ -40,3 +40,20 @@
 
 
 ![Mou icon](./Screenshots/3.png)
+## 主要目录结构
+> --build  
+> --config
+> --src  //前端主要开发目录
+>  --assets  //存放前端静态资源
+>  --components  //存放组件
+>  --store  //vuex数据流管理
+>  --views  //页面试图，由vue-router引入
+>  App.vue 
+>  main.js  //前端入口文件
+>--server  //后台服务
+>  --bin  //启动后台服务配置
+>  --database  //存放页面所需要的json数据
+>  --public  //前端部署时存放在后台服务的位置
+>  --routes  //路由于请求接口管理
+>  --views  //前端模板存放位置
+>  app.js  //后台服务入口
