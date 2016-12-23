@@ -40,6 +40,7 @@
 
 
 ![Mou icon](./Screenshots/3.png)
+
 ## 主要目录结构
 > build  
 > config <br/>
@@ -57,3 +58,32 @@
 >  --routes  //路由于请求接口管理<br/>
 >  --views  //前端模板存放位置<br/>
 >  --app.js  //后台服务入口<br/>
+
+## 后台接口
+本项目是手动抓取淘票票部分数据，数据是16年12月份的，城市数据只有北上广有数据，其它城市都是随机从北上广数据抽取过来的，电影数据也是部分有数据。抓取的数据存放在server目录里的database里，供前端调用。
+1. 访问淘票票首页路径： [http://localhost:9090/app](http://localhost:9090/app)
+
+2. 部分数据接口
+	- 获取热映数据 
+	```
+	method: GET
+ 	url: http://localhost:9090/movie/hot/?city=bj
+ 	参数说明: city可以为bj、sh、gz
+	```
+	- 获取即将上映数据 
+	```
+	method: GET
+ 	url: http://localhost:9090/movie/coming/?limit=20&offset=0
+ 	参数说明: limit为每次请求的数据数量，offset为所有数据的偏移量
+	```
+	- 获取城市数据
+	```
+	method: GET
+ 	url: http://localhost:9090/movie/city
+	```
+	- 获取电影院数据
+	```
+	method: GET
+ 	url: http://localhost:9090/movie/cinema/?city=bj
+ 	参数说明:  city可以为bj、sh、gz
+	```
