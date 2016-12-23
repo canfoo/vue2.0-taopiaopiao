@@ -1,6 +1,6 @@
 # vue2.0与express构建[淘票票](https://h5.m.taobao.com/app/movie/pages/index/index.html?from=def&spm=a1z2r.7661912.h5-movie-list.121&sqm=a1z2r.7661912.1.1&bottomtab=show)页面
 ## 描述
-写这个项目的目的一是为了学习vue2.0相关的知识点，二是为了给他想要了解vue2.0的童鞋提供一个学习demo。所以为了使这个项目更加完整，项目中加入一个server服务，为前端提供数据来源，模拟服务器环境，当用`npm run deploy`命令运行前端环境时，就可以直接部署到server服务里。因此本项目有两个环境，一个是前端开发环境(端口是8080)，一个是server服务环境(端口是9090)。
+写这个项目的目的一是为了学习vue2.0相关的知识点，二是为了给他想要了解vue2.0的童鞋提供一个学习demo。所以为了使这个项目更加完整，项目中加入一个server服务，模拟服务器环境，为前端提供数据来源，当用`npm run deploy`命令运行前端环境时，就可以直接将前端资源部署到server服务里。因此本项目有两个环境，一个是前端开发环境(端口是8080)，一个是server服务环境(端口是9090)。
 
 主要技术栈：<br/>
 - vue2.0
@@ -35,9 +35,9 @@
 备注：因为本项目有提供后台服务，所以当前端部署到服务器后，只要后台服务启动，就可以直接通过`http://localhost:9090/app`路径访问到前端页面，无须再启动前端的开发服务。
 
 ## 项目预览
-![Mou icon](./Screenshots/1.gif) ------
+![Mou icon](./Screenshots/1.gif) ----------
 ![Mou icon](./Screenshots/2.gif) 
-![Mou icon](./Screenshots/3.gif) ------
+![Mou icon](./Screenshots/3.gif) ----------
 ![Mou icon](./Screenshots/4.gif)
 
 ## 主要目录结构
