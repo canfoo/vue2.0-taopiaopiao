@@ -34,17 +34,11 @@
 
 备注：因为本项目有提供后台服务，所以当前端部署到服务器后，只要后台服务启动，就可以直接通过`http://localhost:9090/app`路径访问到前端页面，无须再启动前端的开发服务。
 
-## 项目截图
-![Mou icon](./Screenshots/1.png) ------
-![Mou icon](./Screenshots/2.png) 
-
-
-![Mou icon](./Screenshots/3.png)
-
 ## 项目预览
-<video id="video" autoplay="autoplay" controls="" preload="none" style="width: 320px; height: auto">
-      <source id="mp4" src="http://oimfqqetv.bkt.clouddn.com/tpp-video.mp4">
-</video>
+![Mou icon](./Screenshots/1.gif) ------
+![Mou icon](./Screenshots/2.gif) 
+![Mou icon](./Screenshots/3.gif) ------
+![Mou icon](./Screenshots/4.gif)
 
 ## 主要目录结构
 > build  
