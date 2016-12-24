@@ -56,6 +56,8 @@ export default{
 			let name = ''
 			if (className === "mint-indexsection-index") {
 				name = ''
+			} else if (className === "mint-indexlist-navitem") {
+				name = ''
 			} else if (className === 'mint-cell-wrapper') {
 				name = ele.children[0].children[0].innerHTML
 			} else if (className === "mint-cell-title") {
