@@ -5,6 +5,7 @@ export default {
   	if (city.name) {
   		state.name = city.name
   		state.data = city.data 
+      state.rN = city.rN
   	}
   	state.show = false
   },
