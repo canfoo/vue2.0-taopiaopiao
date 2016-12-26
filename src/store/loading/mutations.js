@@ -10,7 +10,6 @@ export default {
   completeLoad (state) {
   	let stack = state.stack
     stack.pop()
-  	let index = stack.indexOf(1)
     if (!stack.length) {
       //延时为了更好显示loading效果
       setTimeout(() => {

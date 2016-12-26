@@ -1,8 +1,8 @@
 {
-  "name": "vue-tutorial",
+  "name": "vue2.0-taopiaopiao",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "kodo <524580860@qq.com>",
+  "author": "canfoo <178774618@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
