@@ -119,7 +119,7 @@ export default{
 		let id = this.$route.params.id
 		let hotLists = this.$store.state.city.data
 		let comingLists = this.$store.state.coming.lists
-		//由于没有后台没有配置更多的请求接口，
+		//由于后台没有配置更多的请求接口，
 		//电影详情页的数据是从全局（vuex）拿过来的
 		if (comingLists.length) {
 			this.detailObj = this.getDataById(comingLists, id)

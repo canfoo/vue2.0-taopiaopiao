@@ -17,14 +17,5 @@ export default {
         Indicator.close()
       }, 500)
     }
-  	// if (index > -1) {
-  	// 	stack[index] = 0
-  	// 	if (index === stack.length - 1) {
-  	// 		//延时为了更好显示loading效果
-  	// 		setTimeout(() => {
-  	// 		  Indicator.close()
-  	// 		}, 500)
-  	// 	}
-  	// }
   }
 }

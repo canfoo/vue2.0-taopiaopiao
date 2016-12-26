@@ -18,8 +18,6 @@ import App from './App'
 import NotFound from './components/404'
 import LazyLoad from './components/lazyload'
 
-import { Indicator } from 'mint-ui';
-
 Vue.use(LazyLoad)
 Vue.use(Mint)
 Vue.use(VueRouter)

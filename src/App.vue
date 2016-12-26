@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { footerNav} from './components/'
+import { footerNav } from './components/'
 export default {
   name: 'app',
   data () {
