@@ -15,7 +15,7 @@
 ```
  git clone https://github.com/canfoo/vue2.0-taopiaopiao.git
 ```
- 分别进入到vue2.0-taopiaopiao目录和server服务安装依赖包
+ 分别进入到vue2.0-taopiaopiao目录和server目录安装依赖包（注意：需要安装两次）
 ```
  npm install
 ```
