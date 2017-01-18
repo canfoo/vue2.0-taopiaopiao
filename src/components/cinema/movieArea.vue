@@ -26,7 +26,6 @@ export default{
 		return {
 			area: '全部区域',
 			showArea: false,
-			cityName: '',
 			allArea: [],
 			regionOrder: [],
 			regionCinemas: {}

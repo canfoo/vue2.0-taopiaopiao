@@ -33,11 +33,6 @@
 </template>
 <script>
 export default{
-  data () {
-	  return{
-	  	route: '/'
-	  }
-  },
   props: {
   	'showNav': {
   		type: Boolean,

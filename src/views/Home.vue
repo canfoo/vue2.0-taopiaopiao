@@ -39,7 +39,6 @@ export default{
     return {
       moveDistance: '5%',
       imgs: [],
-      hotLists: [],
       comingLists: [],
       loaingLists: [],
       selnav: true,
