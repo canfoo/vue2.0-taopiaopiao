@@ -1,6 +1,6 @@
 <template>
 	<section class="pr v-slide-content">
-		<ul class="v-slide-box pa" ref='vSlide' :class="{'slide-action': slideAction}">
+		<ul class="v-slide-box pa" ref='vSlide' :class="{'slide-action': true}">
 			<li v-for="item in lists">
 				<img style="height: 90px" :class="{'click-select': lists[0] === item}" :src="`https://gw.alicdn.com/${item.poster}`" :data-id="item.id">
 			</li>
