@@ -29,6 +29,9 @@ app.get('/__webpack_hmr', function(res, res) {
   res.send('')
 })
 
+app.get('/', (req, res) => {
+    res.redirect('app');
+});
 app.get('/app', routes.index);  
 app.get(/\/movie\/hot\//, routes.hot);
 app.get(/\/movie\/cinema\//, routes.cinema);
