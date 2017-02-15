@@ -89,7 +89,7 @@ export default{
 	},
 	created () {
 		this.requestData('/movie/cinema_detail', (response) => {
-			let data = JSON.parse(response.data)
+			let data = response.data
 			this.filmLists = data.data.data.returnValue.shows
 			this.selFilm = this.filmLists[0]
 		})
