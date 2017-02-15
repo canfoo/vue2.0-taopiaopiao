@@ -56,7 +56,7 @@ export default{
 			let cityStr = this.matchCityStr(cityName)
 			this.allArea = []
 			this.requestData(`/movie/cinema/?city=${cityStr}`, (response) => {
-				let data = JSON.parse(response.data)
+				let data = response.data
 				let regionOrder = data.data.data.returnValue.regionOrder
 				let regionCinemas = data.data.data.returnValue.regionCinemas
 				this.regionOrder = regionOrder

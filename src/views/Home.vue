@@ -89,7 +89,7 @@ export default{
         this.clickLoadStatus = 'loading'
         setTimeout(() => {
           this.$http.get(`/movie/coming/?limit=${this.limit}&offset=${this.offset}`).then((response) => {
-            let data = JSON.parse(response.data)
+            let data = response.data
             let lists = data.data.data.returnValue
             this.loaingLists = this.loaingLists.concat(lists)
             //模拟索引数据的id号
@@ -141,12 +141,12 @@ export default{
   created () {
     this.pushComingList({lists: []})
     this.requestData('/movie/swiper', (response) => {
-      let data = JSON.parse(response.data)
+      let data = response.data
       this.imgs = data.data.data.returnValue
     })
 
     this.requestData(`/movie/coming/?limit=${this.limit}&offset=${this.offset}`, (response) => {
-      let data = JSON.parse(response.data)
+      let data = response.data
       let lists = data.data.data.returnValue
       //模拟索引数据的id号
       lists.forEach((item, index) => {
