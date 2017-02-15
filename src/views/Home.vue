@@ -141,7 +141,7 @@ export default{
   created () {
     this.pushComingList({lists: []})
     this.requestData('/movie/swiper', (response) => {
-      let data = JSON.parse(response.data)
+      let data = response.data
       this.imgs = data.data.data.returnValue
     })
 

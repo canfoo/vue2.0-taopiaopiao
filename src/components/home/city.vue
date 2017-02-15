@@ -83,7 +83,8 @@ export default{
 	created () {
 		this.$store.dispatch('updateCityAsync', {city: {}})
 		this.requestData('/movie/city', (response) => {
-			let data = JSON.parse(response.data)
+			// let data = JSON.parse(response.data)
+			let data = response.data
 			let cityObj = data.data.data.returnValue
 			let citySort = Object.keys(cityObj)
 			this.cityList.push({

@@ -19,11 +19,11 @@ function sendDataFn(req, res, filename, needcity) {
     }
     dealFn.readFileData(name + readFileName).then((data) => {
         sendData.data = data;
-        res.send(JSON.stringify(sendData));
+        res.send(sendData);
     }, (msg) => {
         sendData.errno = -1;
         sendData.msg = '暂时没有数据';
-        res.send(JSON.stringify(sendData));
+        res.send(sendData);
     })
 }
 

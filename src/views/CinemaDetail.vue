@@ -84,12 +84,11 @@ export default{
 		selectDateTab (event) {
 			let num = +event.target.getAttribute('data-num')
 			this.selDateNum = num
-			console.log(num)
 		}
 	},
 	created () {
 		this.requestData('/movie/cinema_detail', (response) => {
-			let data = JSON.parse(response.data)
+			let data = response.data
 			this.filmLists = data.data.data.returnValue.shows
 			this.selFilm = this.filmLists[0]
 		})
