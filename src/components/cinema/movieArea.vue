@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 export default{
 	data () {
 		return {
@@ -83,11 +83,9 @@ export default{
 			}
 		} 
 	},
-	computed: {
-		cityName () {
-			return this.$store.state.city.name
-		}
-	},
+	computed: mapGetters([
+	  'cityName'
+	]),
 	watch: {
 		area () {
 			if (this.area === '全部区域') {

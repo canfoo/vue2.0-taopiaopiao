@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 import { swiper, hot, city, coming, playVideo} from '../components/'
 export default{
   data () {
@@ -55,11 +55,9 @@ export default{
     coming,
     playVideo
   },
-  computed: {
-    hotLists () {
-      return this.$store.state.city.data
-    }
-  },
+  computed: mapGetters([
+    'hotLists'
+  ]),
   methods: {
     ...mapMutations([
       'pushLoadStack',

@@ -9,13 +9,17 @@ import areaMutations from './cinema/mutations'
 
 Vue.use(Vuex);
 
+const videoGetters = {
+	showMask: state => state.playStatus
+}
 const video = {
 	state: {
 		url: '',
 		cover: '',
 		playStatus: false
 	},
-	mutations: videoMutations
+	mutations: videoMutations,
+	getters: videoGetters
 }
 
 const loading = {
@@ -25,6 +29,10 @@ const loading = {
 	mutations: loadingMutations
 }
 
+const cityGetters = {
+	hotLists: state => state.data,
+	cityName: state => state.name
+}
 const city = {
 	state: {
 		name: '北京',
@@ -33,7 +41,8 @@ const city = {
 		data: []
 	},
 	actions: cityAcions,
-	mutations: cityMutations
+	mutations: cityMutations,
+	getters: cityGetters
 }
 
 const coming = {

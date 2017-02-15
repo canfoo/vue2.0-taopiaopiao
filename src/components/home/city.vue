@@ -28,12 +28,12 @@ export default{
 			'updateCityAsync'
 		]),
 		...mapMutations([
-		  'pushLoadStack',
-		  'completeLoad'
+		  	'pushLoadStack',
+		  	'completeLoad'
 		]),
 		requestData (url, fn) {
-		  this.pushLoadStack()
-		  this.$http.get(url).then(fn).then(this.completeLoad)
+		  	this.pushLoadStack()
+		  	this.$http.get(url).then(fn).then(this.completeLoad)
 		},
 		changeCityData (data) {
 			this.pushLoadStack()

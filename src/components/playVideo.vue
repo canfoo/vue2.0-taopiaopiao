@@ -10,18 +10,16 @@
   </section>
 </template>
 <script>
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 export default{
   data(){
 	  return{
 	  	showIcon: true
 	  }
   },
-  computed: {
-    showMask() {
-      return this.$store.state.video.playStatus
-    }
-  },
+  computed: mapGetters([
+    'showMask'
+  ]),
   methods: {
     ...mapMutations([
       'pauseVideo'
