@@ -54,9 +54,7 @@ export default{
 			let ele = event.target
 			let className = ele.className
 			let name = ''
-			if (className === "mint-indexsection-index") {
-				name = ''
-			} else if (className === "mint-indexlist-navitem") {
+			if (className === "mint-indexsection-index" || className ==="mint-indexlist-nav" || className === "mint-indexlist-navitem") {
 				name = ''
 			} else if (className === 'mint-cell-wrapper') {
 				name = ele.children[0].children[0].innerHTML
