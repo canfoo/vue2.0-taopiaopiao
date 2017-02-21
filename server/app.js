@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //处理webpack服务请求
-app.get('/__webpack_hmr', function(res, res) {
+app.get('/__webpack_hmr', function(req, res) {
   res.send('')
 })
 
