@@ -60,11 +60,11 @@ exports.comingLimit = (req, res) => {
         data.data.returnValue = sendList
         sendData.data = data;
         sendData.total = list.length
-        res.send(JSON.stringify(sendData));
+        res.send(sendData);
     }, (msg) => {
         sendData.errno = -1;
         sendData.msg = '暂时没有数据';
-        res.send(JSON.stringify(sendData));
+        res.send(sendData);
     })
 }
 
