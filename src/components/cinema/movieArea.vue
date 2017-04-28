@@ -95,7 +95,9 @@ export default{
 			}
 		},
 		cityName () {
+			console.log('kkkksss')
 			this.getAreaData(this.cityName)
+			this.area = '全部区域'
 			setTimeout(() => {
 				this.updateAreaData({area: this.allArea})
 			}, 0)
