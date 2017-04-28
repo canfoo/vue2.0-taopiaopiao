@@ -73,13 +73,16 @@ export default{
 			let reg = /([\u4e00-\u9fa5]*)\（/
 			this.area = reg.exec(str)[1]
 			this.showArea = false
+			document.documentElement.style.overflow = 'scroll'
 		},
 		showAreaAction () {
 			this.showArea = true
+			document.documentElement.style.overflow = 'hidden'
 		},
 		cancelArea (event) {
 			if (event.target.className === 'mask') {
 				this.showArea = false
+				document.documentElement.style.overflow = 'scroll'
 			}
 		} 
 	},
@@ -95,7 +98,6 @@ export default{
 			}
 		},
 		cityName () {
-			console.log('kkkksss')
 			this.getAreaData(this.cityName)
 			this.area = '全部区域'
 			setTimeout(() => {

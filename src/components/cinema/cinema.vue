@@ -1,5 +1,5 @@
 <template>
-	<section style="margin-top: 40px; background: #fff">
+	<section class="cinema-box" style="margin-top: 40px; background: #fff">
 		<ul class="cm-item">
 			<li v-for="item in $store.state.cinema.area">
 				<router-link :to="{ name: 'cdetail', params: { id: item.id }}">
