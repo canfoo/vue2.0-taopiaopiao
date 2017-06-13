@@ -38,6 +38,12 @@ export default {
   },
   created () {
     this.routeChange()
+  },
+  mounted () {
+    window.setTimeout(() => {
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+    }, 250)
   }
 }
 </script>

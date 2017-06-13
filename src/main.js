@@ -61,6 +61,7 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
+
 router.afterEach(route => {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0

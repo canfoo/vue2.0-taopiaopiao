@@ -14,7 +14,7 @@ export default {
       //延时为了更好显示loading效果
       setTimeout(() => {
         Indicator.close()
-      }, 500)
+      }, 200)
     }
   }
 }
