@@ -3,7 +3,7 @@
     <section v-for="comingItem in comingLists">
       <p class="open-date">{{ comingItem.openTime }} {{ comingItem.day }}</p>
       <ul class="coming">
-        <li :class="{'border-bottom': comingItem.movies[comingItem.movies.length-1] != item}" v-for="item in comingItem.movies" key="item.id">
+        <li :class="{'border-bottom': comingItem.movies[comingItem.movies.length-1] != item}" v-for="(item, index) in comingItem.movies" :key="item.id">
           <figure class="m-img ml fl pr" @click="playMovieVideo(item.preview[0] ? item.preview[0].iphoneUrl : 'http://cloud.video.taobao.com/play/u/1745440806/p/1/e/6/t/1/d/hd/45862110.mp4'
   , `https://gw.alicdn.com/${item.poster}`)">
             <img v-lazyload="`https://gw.alicdn.com/${item.poster}`">
